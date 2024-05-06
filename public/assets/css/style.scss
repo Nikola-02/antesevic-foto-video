@@ -1,0 +1,280 @@
+@use 'variables' as vars;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: vars.$black;
+}
+
+//Animations
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+//Nav
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 14px auto;
+
+    .logo {
+        h1 {
+            a {
+                text-decoration: none;
+                color: vars.$black;
+                font-weight: 300;
+                font-size: 35px;
+            }
+        }
+    }
+
+    nav {
+        ul {
+            display: flex;
+            gap: 55px;
+            list-style-type: none;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: vars.$black;
+                    font-weight: 300;
+
+                    &:hover {
+                        color: vars.$soft-black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Hero
+.own-container {
+    .hero {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        gap: 350px;
+
+        margin-bottom: 130px;
+
+        .text {
+            width: 80%;
+
+            .profession {
+                opacity: 0;
+                width: 30%;
+                font-size: 16px;
+                font-weight: 500;
+                padding-bottom: 22px;
+                border-bottom: 1px solid vars.$black;
+
+                animation: slideInLeft 1s ease forwards;
+            }
+
+            .name {
+                opacity: 0;
+                margin-top: 15px;
+                font-size: 70px;
+                font-weight: 500;
+                animation: slideInLeft 1s ease 0.2s forwards;
+            }
+
+            .short-about-me {
+                opacity: 0;
+                margin: 20px 0 40px 0;
+                animation: slideInLeft 1s ease 0.4s forwards;
+            }
+
+            .own-button {
+                display: inline-block;
+                opacity: 0;
+                animation: slideInLeft 1s ease 0.6s forwards;
+            }
+        }
+
+        .image {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 70px;
+
+            img {
+                position: absolute;
+                opacity: 0;
+            }
+
+            .bride-image {
+                animation: slideInRight 1s ease forwards;
+            }
+
+            .girl-hero-image {
+                animation: slideInRight 1s ease 0.3s forwards;
+            }
+
+            .boy-hero-image {
+                animation: slideInRight 1s ease 0.6s forwards;
+
+            }
+        }
+
+    }
+
+    .about-me-home {
+        padding-top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .image {
+            width: 25%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .text {
+            width: 45%;
+
+            .title {
+                margin-bottom: 20px;
+            }
+
+            .about-me-desc {
+                color: rgba(vars.$black, 0.8);
+                margin-bottom: 40px;
+            }
+
+            a {
+
+            }
+        }
+    }
+}
+
+//Contact section
+.contact-reservation {
+    margin-top: 70px;
+    background: url("../images/contact-section.png");
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+    color: vars.$white-smoke;
+
+    .own-container {
+        .title {
+            p {
+                color: vars.$white-smoke;
+            }
+
+            h3 {
+                color: vars.$white-smoke;
+            }
+        }
+
+        .contact-desc {
+            margin-bottom: 30px;
+        }
+
+        a {
+            display: inline-block;
+            background-color: transparent;
+            border: 1px solid vars.$white-smoke;
+            color: vars.$white-smoke;
+
+            &:hover {
+                background-color: vars.$white-smoke;
+                color: vars.$black;
+            }
+        }
+    }
+}
+
+//Gallery Home
+.own-container {
+    .gallery-home {
+        margin-top: 70px;
+
+        .title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            h3 {
+                margin-bottom: 6px;
+            }
+
+            span {
+                font-weight: 300;
+                font-size: 21px;
+                color: rgba(vars.$black, 0.8);
+            }
+
+            a {
+                margin-top: 20px;
+            }
+        }
+
+        .grid-gallery {
+            display: grid;
+            place-items: center;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            row-gap: 24px;
+
+            .small-grid {
+                display: flex;
+                align-items: flex-end;
+                height: 100%;
+                gap: 24px;
+            }
+
+            .large-grid {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                gap: 24px;
+            }
+
+            .big-image-boy {
+                grid-row: 4 / -2;
+            }
+        }
+    }
+}
