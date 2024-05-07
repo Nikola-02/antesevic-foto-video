@@ -1,10 +1,12 @@
 @include('fixed.head')
 <body>
-    @include('fixed.nav')
+@include('fixed.nav')
 
-    @yield('content')
+@yield('content')
 
-    @include('fixed.footer')
-    @yield('script')
+@include('fixed.footer')
+@yield('script')
+
+<script src="https://kit.fontawesome.com/231b95a13a.js" crossorigin="anonymous"></script>
 </body>
 </html>
