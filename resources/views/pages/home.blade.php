@@ -3,7 +3,7 @@
     <div class="own-container">
         <div class="hero">
             <div class="text">
-                <p class="profession">FOTOGRAF</p>
+                <p class="profession">FOTOGRAFS</p>
                 <h2 class="name">Filip Antešević</h2>
                 <p class="short-about-me">Usluge fotografisanja i snimanja za sve vrste svečanosti i promocije Vaših
                     biznisa.</p>
