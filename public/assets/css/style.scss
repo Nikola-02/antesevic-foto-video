@@ -289,7 +289,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 0;
+    padding: 160px 0;
 
     h6 {
       font-size: 25px;
@@ -310,7 +310,7 @@ footer {
         a {
           color: vars.$white-smoke;
           text-decoration: none;
-          font-size: 23px;
+          font-size: 24px;
           font-weight: 300;
 
           span {
@@ -347,6 +347,14 @@ footer {
     .right {
       width: 27%;
       color: vars.$white-smoke;
+
+      ul {
+        li {
+          display: flex;
+          align-items: center;
+        }
+      }
+
     }
 
   }
@@ -356,6 +364,7 @@ footer {
     justify-content: space-between;
     border-top: 1px solid rgba(vars.$white-smoke, 0.3);
     padding: 30px 0;
+    background-color: vars.$black;
 
     .own-container {
       padding: 0;

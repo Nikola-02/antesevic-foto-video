@@ -256,7 +256,7 @@ footer .own-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 0;
+  padding: 160px 0;
 }
 footer .own-container h6 {
   font-size: 25px;
@@ -274,7 +274,7 @@ footer .own-container ul li:not(:last-child) {
 footer .own-container ul li a {
   color: #F9F9F9;
   text-decoration: none;
-  font-size: 23px;
+  font-size: 24px;
   font-weight: 300;
 }
 footer .own-container ul li a span {
@@ -302,11 +302,16 @@ footer .own-container .right {
   width: 27%;
   color: #F9F9F9;
 }
+footer .own-container .right ul li {
+  display: flex;
+  align-items: center;
+}
 footer .after-footer {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid rgba(249, 249, 249, 0.3);
   padding: 30px 0;
+  background-color: #1B1B1B;
 }
 footer .after-footer .own-container {
   padding: 0;
