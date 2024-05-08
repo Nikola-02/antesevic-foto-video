@@ -14,4 +14,9 @@ class Post extends Model
         'path',
         'gallery_id'
     ];
+
+    public function gallery()
+    {
+        return $this->belongsTo(Gallery::class);
+    }
 }

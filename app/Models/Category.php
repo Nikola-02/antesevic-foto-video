@@ -13,4 +13,9 @@ class Category extends Model
         'name',
         'primary_image'
     ];
+
+    public function galleries()
+    {
+        return $this->hasMany(Gallery::class);
+    }
 }
