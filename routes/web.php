@@ -6,3 +6,4 @@ use \App\Http\Controllers\GalleryController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/gallery', [GalleryController::class, 'index']);
+Route::get('/admin', [GalleryController::class, 'index']);
