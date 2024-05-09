@@ -4,6 +4,5 @@ h1 {
 
 img.rounded-circle {
     object-fit: cover;
-    object-position: 0px 10%;
-
+    object-position: 0 10%;
 }

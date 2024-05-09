@@ -1,9 +1,22 @@
 @include('fixed.admin.head')
 <body>
+<div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+     data-sidebar-position="fixed" data-header-position="fixed">
+    <!-- Sidebar Start -->
+    @include('fixed.admin.nav')
+    <!--  Sidebar End -->
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+        <!--  Header Start -->
+        @include('fixed.admin.header')
+        <!--  Header End -->
+        <div class="container-fluid">
+            @yield('content')
+            @include('fixed.admin.footer')
+        </div>
+    </div>
+</div>
 
-@yield('content')
-
-@include('fixed.admin.footer')
 @yield('script')
 
 <script src="https://kit.fontawesome.com/231b95a13a.js" crossorigin="anonymous"></script>
