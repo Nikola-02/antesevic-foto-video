@@ -9,10 +9,12 @@
                 <a href="/contact" class="own-button">REZERVIŠI DATUM</a>
             </div>
             <div class="image">
-                <img src="<?php echo e(asset('assets/images/first-image-girl.png')); ?>" alt="Image of brides" class="bride-image">
+                <img src="<?php echo e(asset('assets/images/first-image-girl.png')); ?>" alt="Image of brides"
+                     class="bride-image">
                 <img src="<?php echo e(asset('assets/images/girl-hero-section.png')); ?>" alt="Girl in field posing"
                      class="girl-hero-image">
-                <img src="<?php echo e(asset('assets/images/boy-hero-section.png')); ?>" alt="Boy sitting at chair in a suit"
+                <img src="<?php echo e(asset('assets/images/boy-hero-section.png')); ?>"
+                     alt="Boy sitting at chair in a suit"
                      class="boy-hero-image">
             </div>
         </div>
@@ -54,15 +56,19 @@
             </div>
             <div class="grid-gallery">
                 <div class="small-grid">
-                    <img src="<?php echo e(asset('assets/images/home_grid/grid-1.png')); ?>" alt="Girl with purple background"/>
-                    <img src="<?php echo e(asset('assets/images/home_grid/grid-2.png')); ?>" alt="Group of young people"/>
+                    <img src="<?php echo e(asset('assets/images/home_grid/grid-1.png')); ?>"
+                         alt="Girl with purple background"/>
+                    <img src="<?php echo e(asset('assets/images/home_grid/grid-2.png')); ?>"
+                         alt="Group of young people"/>
                 </div>
 
                 <div class="large-grid">
-                    <img src="<?php echo e(asset('assets/images/home_grid/grid-3.png')); ?>" alt="Boy in a suit sitting on a chair"/>
+                    <img src="<?php echo e(asset('assets/images/home_grid/grid-3.png')); ?>"
+                         alt="Boy in a suit sitting on a chair"/>
                     <img src="<?php echo e(asset('assets/images/home_grid/grid-4.png')); ?>"
                          alt="Girl in the forest looking over a shoulder"/>
-                    <img src="<?php echo e(asset('assets/images/home_grid/grid-5.png')); ?>" alt="Girl in a room with red dress"/>
+                    <img src="<?php echo e(asset('assets/images/home_grid/grid-5.png')); ?>"
+                         alt="Girl in a room with red dress"/>
                 </div>
 
                 <img src="<?php echo e(asset('assets/images/home_grid/grid-6.png')); ?>"
@@ -73,4 +79,4 @@
     </div>
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('layouts.layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\Laravel\filip_portfolio\resources\views/pages/home.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\Laravel\filip_portfolio\resources\views/pages/dashboard.blade.php ENDPATH**/ ?>
