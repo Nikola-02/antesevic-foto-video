@@ -7,7 +7,8 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-##About project 
+# About project
+Laravel responsive app for client, that showcase his work (photography and videography)
 
 ## About Laravel
 
