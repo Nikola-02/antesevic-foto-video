@@ -30,6 +30,15 @@ class UserController extends Controller
     }
 
     public function performLogin(Request $request){
+        $form_fields = $request->validate([
+            'email'=>'required|email',
+            'password'=>'required'
+        ]);
 
+        if(auth()->attempt($form_fields)){
+            return redirect('/admin');
+        }
+
+        return redirect()->back()->with('wrong_credentials', 'Kredencijali nisu ispravni.');
     }
 }

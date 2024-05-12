@@ -7,7 +7,7 @@
                     <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2"
                        data-bs-toggle="dropdown"
                        aria-expanded="false">
-                        <img src="{{asset('assets/images/filip.png')}}" alt="" width="35" height="35"
+                        <img src="{{asset('assets/images') ."/". auth()->user()->image}}" alt="" width="35" height="35"
                              class="rounded-circle">
                     </a>
                     <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up"
@@ -16,12 +16,12 @@
                             <a href="javascript:void(0)"
                                class="d-flex align-items-center gap-2 dropdown-item">
                                 <i class="ti ti-user fs-6"></i>
-                                <p class="mb-0 fs-3">Filip Antesevic</p>
+                                <p class="mb-0 fs-3">{{auth()->user()->first_name}} {{auth()->user()->last_name}}</p>
                             </a>
                             <a href="javascript:void(0)"
                                class="d-flex align-items-center gap-2 dropdown-item">
                                 <i class="ti ti-badge fs-6"></i>
-                                <p class="mb-0 fs-3">Administrator</p>
+                                <p class="mb-0 fs-3">{{ucfirst(auth()->user()->role->name)}}</p>
                             </a>
                             <a href="/"
                                class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>

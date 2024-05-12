@@ -6,8 +6,9 @@
         </div>
 
         <div class="login-form">
-            <form>
-                <div class="border-b border-gray-900/10 pb-12 w-50">
+            <form method="post" action="/performLogin">
+                <?php echo csrf_field(); ?>
+                <div class="pb-3 w-50">
 
                     <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                         <div class="sm:col-span-6">
@@ -25,6 +26,12 @@
                         </div>
                     </div>
                 </div>
+
+                <?php if(session('wrong_credentials')): ?>
+                <div class="bg-red-100 border border-red-400 text-red-700 px-5 py-3 rounded relative" role="alert">
+                    <span class="block sm:inline"><?php echo e(session('wrong_credentials')); ?></span>
+                </div>
+                <?php endif; ?>
 
                 <div class="mt-6 flex items-center justify-end gap-x-6">
                     <button type="reset" class="text-sm font-semibold leading-6 text-gray-900">Cancel</button>

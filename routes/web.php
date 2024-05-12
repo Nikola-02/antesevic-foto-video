@@ -15,4 +15,6 @@ Route::prefix('admin')->group(function(){
     Route::get('/categories', [CategoriesAdminController::class, 'index']);
 });
 
-Route::get('/login', [UserController::class, 'login']);
+Route::get('/qwkeuyfgkqweuygfkyuwergkuwehrflogin', [UserController::class, 'login']);
+Route::post('/performLogin', [UserController::class, 'performLogin']);
+
