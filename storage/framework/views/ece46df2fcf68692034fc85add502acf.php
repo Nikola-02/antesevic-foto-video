@@ -1,5 +1,5 @@
-@extends('layouts.layout')
-@section('content')
+
+<?php $__env->startSection('content'); ?>
     <div class="own-container">
         <div class="title login-title">
             <h3>Login</h3>
@@ -34,4 +34,5 @@
 
         </div>
     </div>
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\Laravel\antesevic-foto-video\resources\views/pages/users/login.blade.php ENDPATH**/ ?>

@@ -256,7 +256,7 @@ footer .own-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 160px 0;
+  padding: 110px 0;
 }
 footer .own-container h6 {
   font-size: 25px;
@@ -364,6 +364,24 @@ footer .after-footer .own-container p {
 .gallery-content .content-grid a .image img:hover {
   transform: scale(1.15);
   filter: grayscale(0);
+}
+
+.own-container .login-title {
+  text-align: center;
+}
+.own-container .login-title h3 {
+  font-weight: 500;
+}
+.own-container .login-form form {
+  margin: 0 auto;
+  width: 40%;
+}
+.own-container .login-form form label {
+  font-size: 16px;
+}
+.own-container .login-form form input {
+  padding: 9px 12px;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

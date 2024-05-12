@@ -19,5 +19,8 @@
     {{-- CSS--}}
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}"/>
 
+    {{--  Tailwind  --}}
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <title>Filip Antesevic - FOTO & VIDEO</title>
 </head>

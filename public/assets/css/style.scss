@@ -289,7 +289,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 160px 0;
+    padding: 110px 0;
 
     h6 {
       font-size: 25px;
@@ -433,5 +433,31 @@ footer {
       }
     }
 
+  }
+}
+
+//Login
+.own-container{
+  .login-title{
+    text-align: center;
+    h3{
+      font-weight: 500;
+    }
+  }
+
+  .login-form{
+    form{
+      margin: 0 auto;
+      width: 40%;
+      label{
+        font-size: 16px;
+      }
+
+      input{
+        padding: 9px 12px;
+        font-size: 16px;
+      }
+
+    }
   }
 }
