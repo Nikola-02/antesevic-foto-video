@@ -2,11 +2,34 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Role;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
     public function login(){
+//        Role::create([
+//            'name'=>'admin'
+//        ]);
+//        Role::create([
+//            'name'=>'user'
+//        ]);
+//
+//        User::create([
+//            'username'=>'antesevic',
+//            'first_name'=>'Filip',
+//            'last_name'=>'Antesevic',
+//            'email'=>'filipantesevic@gmail.com',
+//            'password'=>bcrypt('Filip123!'),
+//            'image'=>'filip.png',
+//            'role_id'=>1
+//        ]);
+
         return view('pages.users.login');
+    }
+
+    public function performLogin(Request $request){
+
     }
 }
