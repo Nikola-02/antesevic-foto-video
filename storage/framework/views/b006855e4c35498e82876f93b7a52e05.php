@@ -19,6 +19,9 @@
     
     <link rel="stylesheet" href="<?php echo e(asset('assets/css/style.css')); ?>"/>
 
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <title>Filip Antesevic - FOTO & VIDEO</title>
 </head>
 <?php /**PATH C:\Users\Nikola\Desktop\Laravel projects\antesevic-foto-video\resources\views/fixed/head.blade.php ENDPATH**/ ?>

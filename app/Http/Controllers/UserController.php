@@ -20,7 +20,7 @@ class UserController extends Controller
 //            'username'=>'antesevic',
 //            'first_name'=>'Filip',
 //            'last_name'=>'Antesevic',
-//            'email'=>'filipantesevic@gmail.com',
+//            'email'=>'antesevicfotovideo@gmail.com',
 //            'password'=>bcrypt('Filip123!'),
 //            'image'=>'filip.png',
 //            'role_id'=>1
