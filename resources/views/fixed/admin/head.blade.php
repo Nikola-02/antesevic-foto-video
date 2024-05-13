@@ -23,6 +23,9 @@
 
     <link rel="stylesheet" href="{{asset('assets/css/admin/own-style.css')}}"/>
 
+    {{-- Flowbite --}}
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
     {{--  Tailwind  --}}
     <script src="https://cdn.tailwindcss.com"></script>
 

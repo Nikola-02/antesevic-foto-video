@@ -2,16 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
+use Intervention\Image\Image;
 
-class CategoriesAdminController extends Controller
+class CategoriesAdminController extends BaseController
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('pages.admin.categories.home');
+        return view('pages.admin.categories.home', ['categories'=> Category::all()]);
     }
 
     /**
@@ -27,7 +29,25 @@ class CategoriesAdminController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $form_fields = $request->validate([
+            'name'=>'required',
+            'primary_image'=>'required|mimes:jpg,jpeg,png'
+        ]);
+
+        try {
+
+            if($request->file('primary_image')){
+                $form_fields['primary_image'] = $this->saveImageAndGetImageName($request->file('primary_image'));
+
+                Category::create($form_fields);
+            }else{
+                return redirect()->back()->with('error', 'Slika je obavezna da se posalje.');
+            }
+
+            return redirect('/admin/categories');
+        }catch (\Exception $ex){
+            return redirect()->back()->with('error', 'Desila se greska u bazi.');
+        }
     }
 
     /**
