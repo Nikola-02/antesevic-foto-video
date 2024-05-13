@@ -36,25 +36,28 @@
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($categories as $index=>$cat)
+                            @foreach($categories as $index => $cat)
                             <tr>
-                                <td class="border-bottom-0"><h6 class="fw-semibold mb-0">{{$index}}</h6></td>
+                                <td class="border-bottom-0"><h6 class="fw-semibold mb-0">{{$index + 1}}</h6></td>
                                 <td class="border-bottom-0">
-                                    <p class="mb-0 fw-normal">Elite Admin</p>
+                                    <p class="mb-0 fw-bold">{{strtoupper($cat->name)}}</p>
                                 </td>
                                 <td class="border-bottom-0">
-                                    <p class="mb-0 fw-normal">Elite Admin</p>
+                                    <p class="mb-0 fw-normal"><img src="{{asset('assets/images/categories/' . $cat->primary_image)}}" alt="{{$cat->name}}" width="80px"></p>
                                 </td>
                                 <td class="border-bottom-0">
-                                    <div class="d-flex align-items-center gap-2">
-                                        <span class="badge bg-primary rounded-3 fw-semibold">Low</span>
-                                    </div>
+                                    <p class="mb-0 fw-normal">{{$cat->created_at}}</p>
+
                                 </td>
                                 <td class="border-bottom-0">
-                                    <button class="btn btn-primary mb-0"><i class="ti ti-pencil"></i></button>
+                                    <a href="" class="btn btn-primary mb-0"><i class="ti ti-pencil"></i></a>
                                 </td>
                                 <td class="border-bottom-0">
-                                    <button class="btn btn-danger mb-0"><i class="ti ti-trash"></i></button>
+                                    <form action="" method="post">
+                                        @csrf
+                                        @method('delete')
+                                        <button type="submit" class="btn btn-danger mb-0"><i class="ti ti-trash"></i></button>
+                                    </form>
                                 </td>
                             </tr>
                             @endforeach

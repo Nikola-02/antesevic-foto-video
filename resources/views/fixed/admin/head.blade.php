@@ -16,15 +16,15 @@
     {{-- FAVICON--}}
     <link rel="icon" type="image/x-icon" href="{{asset('assets/images/favicon.ico')}}"/>
 
+    {{-- Flowbite --}}
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
     {{-- CSS--}}
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}"/>
 
     <link rel="stylesheet" href="{{asset('assets/css/admin/styles.min.css')}}"/>
 
     <link rel="stylesheet" href="{{asset('assets/css/admin/own-style.css')}}"/>
-
-    {{-- Flowbite --}}
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
 
     {{--  Tailwind  --}}
     <script src="https://cdn.tailwindcss.com"></script>
