@@ -2,8 +2,8 @@
 @section('content')
 
     <div class="categories-admin">
-        <div class="title-and-button d-flex align-items-center gap-3 mt-3 mb-5">
-            <h3 class="fw-bolder">Kategorije</h3>
+        <div class="title-and-button d-flex align-content-center gap-3 mt-3 mb-5">
+            <h3 class="text-2xl fw-bolder">Kategorije</h3>
             <a href="/admin/categories/create" class="btn btn-primary">Dodaj kategoriju</a>
         </div>
 
