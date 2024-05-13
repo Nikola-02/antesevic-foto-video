@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use Illuminate\Http\Request;
-use Intervention\Image\Image;
 
 class CategoriesAdminController extends BaseController
 {
@@ -37,7 +36,7 @@ class CategoriesAdminController extends BaseController
         try {
 
             if($request->file('primary_image')){
-                $form_fields['primary_image'] = $this->saveImageAndGetImageName($request->file('primary_image'));
+                $form_fields['primary_image'] = $this->saveCompressedAndResizedImageAndGetImageName($request->file('primary_image'));
 
                 Category::create($form_fields);
             }else{
