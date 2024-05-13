@@ -12,7 +12,7 @@ Route::get('/gallery', [GalleryController::class, 'index']);
 
 Route::prefix('admin')->group(function(){
     Route::get('/', [AdminController::class, 'index']);
-    Route::get('/categories', [CategoriesAdminController::class, 'index']);
+    Route::resource('categories', CategoriesAdminController::class);
 });
 
 Route::get('/qwkeuyfgkqweuygfkyuwergkuwehrflogin', [UserController::class, 'login']);

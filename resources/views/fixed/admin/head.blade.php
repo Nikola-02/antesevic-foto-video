@@ -23,5 +23,8 @@
 
     <link rel="stylesheet" href="{{asset('assets/css/admin/own-style.css')}}"/>
 
+    {{--  Tailwind  --}}
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <title>Admin Dashboard - Filip Antesevic - FOTO & VIDEO</title>
 </head>

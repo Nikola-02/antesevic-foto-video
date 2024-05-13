@@ -2,7 +2,9 @@ h1 {
     font-size: 20px;
 }
 
-img.rounded-circle {
+img.profile-img {
+    height: 35px;
+    border-radius: 50%;
     object-fit: cover;
     object-position: 0 10%;
 }

@@ -2,10 +2,15 @@
 @section('content')
 
     <div class="categories-admin">
+        <div class="title-and-button d-flex align-items-center gap-3 mt-3 mb-5">
+            <h3 class="fw-bolder">Kategorije</h3>
+            <a href="/admin/categories/create" class="btn btn-primary">Dodaj kategoriju</a>
+        </div>
+
         <div class="col-lg-12 d-flex align-items-stretch">
             <div class="card w-100">
                 <div class="card-body p-4">
-                    <h5 class="card-title fw-semibold mb-4">Kategorije</h5>
+{{--                    <h5 class="card-title fw-semibold mb-4">Kategorije</h5>--}}
                     <div class="table-responsive">
                         <table class="table text-nowrap mb-0 align-middle">
                             <thead class="text-dark fs-4">

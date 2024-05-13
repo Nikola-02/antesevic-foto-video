@@ -1,14 +1,14 @@
 <header class="app-header">
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
-            <h1>Admin panel</h1>
+            <h1 class="text-2xl">Admin panel</h1>
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
                 <li class="nav-item dropdown">
                     <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2"
                        data-bs-toggle="dropdown"
                        aria-expanded="false">
                         <img src="{{asset('assets/images') ."/". auth()->user()->image}}" alt="" width="35" height="35"
-                             class="rounded-circle">
+                            class="profile-img"/>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up"
                          aria-labelledby="drop2">
