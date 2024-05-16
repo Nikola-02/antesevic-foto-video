@@ -98,8 +98,15 @@ class CategoriesAdminController extends BaseController
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Category $category)
     {
-        //
+        try {
+            $category->delete();
+
+            return redirect('/admin/categories');
+
+        }catch (\Exception $ex){
+            return redirect()->back()->with('error', 'Desila se greska u bazi.');
+        }
     }
 }
