@@ -68,9 +68,31 @@ class CategoriesAdminController extends BaseController
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Category $category)
     {
-        //
+        $form_fields = $request->validate([
+            'name'=>'required',
+        ]);
+
+        if($request->file('primary_image')) {
+            $formFields = $request->validate(['primary_image' => 'mimes:jpg,png']);
+        }
+
+        try {
+
+            if($request->file('primary_image')){
+                $form_fields['primary_image'] = $this->saveCompressedAndResizedImageAndGetImageName($request->file('primary_image'));
+
+                $category->update($form_fields);
+            }else{
+                $category->update($form_fields);
+            }
+
+            return redirect('/admin/categories');
+
+        }catch (\Exception $ex){
+            return redirect()->back()->with('error', 'Desila se greska u bazi.');
+        }
     }
 
     /**

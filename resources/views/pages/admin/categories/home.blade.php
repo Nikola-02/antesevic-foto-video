@@ -53,7 +53,7 @@
                                     <a href="/admin/categories/{{$cat->id}}/edit" class="btn btn-primary mb-0"><i class="ti ti-pencil"></i></a>
                                 </td>
                                 <td class="border-bottom-0">
-                                    <form action="" method="post">
+                                    <form action="/admin/categories/{{$cat->id}}" method="post">
                                         @csrf
                                         @method('delete')
                                         <button type="submit" class="btn btn-danger mb-0"><i class="ti ti-trash"></i></button>
