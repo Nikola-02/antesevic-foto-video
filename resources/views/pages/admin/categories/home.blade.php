@@ -50,7 +50,7 @@
 
                                 </td>
                                 <td class="border-bottom-0">
-                                    <a href="" class="btn btn-primary mb-0"><i class="ti ti-pencil"></i></a>
+                                    <a href="/admin/categories/{{$cat->id}}/edit" class="btn btn-primary mb-0"><i class="ti ti-pencil"></i></a>
                                 </td>
                                 <td class="border-bottom-0">
                                     <form action="" method="post">
