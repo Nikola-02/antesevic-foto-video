@@ -9,6 +9,7 @@
 
 # About project
 Laravel responsive app for client, that showcase his work (photography and videography)
+There is also Admin Panel where client can do CRUD operations with his projects.
 
 ## About Laravel
 
