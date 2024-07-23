@@ -332,13 +332,15 @@ footer .after-footer .own-container p {
 .gallery-title .title p {
   margin-top: 12px;
   font-weight: 300;
-  font-size: 23px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .gallery-content .content-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   row-gap: 30px;
 }
 .gallery-content .content-grid a .image {
@@ -382,6 +384,4 @@ footer .after-footer .own-container p {
 .own-container .login-form form input {
   padding: 9px 12px;
   font-size: 16px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

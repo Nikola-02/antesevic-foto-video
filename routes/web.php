@@ -5,10 +5,11 @@ use \App\Http\Controllers\HomeController;
 use \App\Http\Controllers\GalleryController;
 use \App\Http\Controllers\AdminController;
 use \App\Http\Controllers\CategoriesAdminController;
+use App\Http\Controllers\CategoriesController;
 use \App\Http\Controllers\UserController;
 
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/gallery', [GalleryController::class, 'index']);
+Route::get('/categories', [CategoriesController::class, 'index']);
 
 Route::prefix('admin')->group(function(){
     Route::get('/', [AdminController::class, 'index']);

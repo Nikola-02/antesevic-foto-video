@@ -18,8 +18,8 @@
         <div class="right">
             <h6>KONTAKTIRAJTE ME</h6>
             <ul>
-                <li><a href="mailto:filiproker@gmail.com"><span><i
-                                    class="fa-solid fa-envelope"></i></span>filiproker@gmail.com</a>
+                <li><a href="mailto:antesevicfotovideo@gmail.com"><span><i
+                                    class="fa-solid fa-envelope"></i></span>antesevicfotovideo@gmail.com</a>
                 </li>
                 <li><a href="tel:+4733378901"><span><i class="fa-solid fa-phone"></i></span>+381 /
                         641364897</a></li>
