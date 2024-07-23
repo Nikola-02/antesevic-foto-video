@@ -61,11 +61,11 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="/gallery" aria-expanded="false">
+                    <a class="sidebar-link" href="/categories" aria-expanded="false">
                                 <span>
                                   <i class="ti ti-album"></i>
                                 </span>
-                        <span class="hide-menu">Galerije</span>
+                        <span class="hide-menu">Kategorije Galerije</span>
                     </a>
                 </li>
                 <li class="sidebar-item">

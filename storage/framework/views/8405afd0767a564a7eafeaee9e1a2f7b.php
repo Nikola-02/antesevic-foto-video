@@ -1,5 +1,5 @@
-@extends('layouts.layout')
-@section('content')
+
+<?php $__env->startSection('content'); ?>
     <div class="own-container gallery-title">
         <div class="title">
             <h3>KATEGORIJE GALERIJE</h3>
@@ -13,35 +13,36 @@
             <a href="">
                 <div class="image">
                     <div class="overlay-text">18. ROĐENDANI</div>
-                    <img src="{{asset('assets/images/18-birthday.jpg')}}" alt=""/></div>
+                    <img src="<?php echo e(asset('assets/images/18-birthday.jpg')); ?>" alt=""/></div>
             </a>
             <a href="">
                 <div class="image">
                     <div class="overlay-text">1. ROĐENDANI</div>
-                    <img src="{{asset('assets/images/1-birthday.jpg')}}" alt=""/></div>
+                    <img src="<?php echo e(asset('assets/images/1-birthday.jpg')); ?>" alt=""/></div>
             </a>
             <a href="">
                 <div class="image">
                     <div class="overlay-text">KRŠTENJA</div>
-                    <img src="{{asset('assets/images/gallery-category-3.jpg')}}" alt=""/></div>
+                    <img src="<?php echo e(asset('assets/images/gallery-category-3.jpg')); ?>" alt=""/></div>
             </a>
             <a href="">
                 <div class="image">
                     <div class="overlay-text">SVADBE</div>
-                    <img src="{{asset('assets/images/gallery-category-4.jpg')}}" alt=""/></div>
+                    <img src="<?php echo e(asset('assets/images/gallery-category-4.jpg')); ?>" alt=""/></div>
             </a>
             <a href="">
                 <div class="image">
                     <div class="overlay-text">REKLAMNI MATERIJALI</div>
-                    <img src="{{asset('assets/images/gallery-category-4.jpg')}}" alt=""/></div>
+                    <img src="<?php echo e(asset('assets/images/gallery-category-4.jpg')); ?>" alt=""/></div>
             </a>
-            {{--            <a href="">--}}
-            {{--                <div class="image">--}}
-            {{--                    <div class="overlay-text">18. ROĐENDANI</div>--}}
-            {{--                    <img src="{{asset('assets/images/gallery-category-4.jpg')}}" alt=""/></div>--}}
-            {{--            </a>--}}
+            
+            
+            
+            
+            
 
 
         </div>
     </div>
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\Laravel\antesevic-foto-video\resources\views/pages/categories.blade.php ENDPATH**/ ?>

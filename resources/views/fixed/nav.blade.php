@@ -5,7 +5,7 @@
     <nav>
         <ul>
             <li><a href="/">POCETNA</a></li>
-            <li><a href="/gallery">GALERIJE</a></li>
+            <li><a href="/categories">GALERIJA (KATEGORIJE)</a></li>
             <li><a href="">O MENI</a></li>
             <li><a href="">KONTAKT</a></li>
         </ul>
