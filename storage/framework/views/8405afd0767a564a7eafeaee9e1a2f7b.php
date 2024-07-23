@@ -10,31 +10,15 @@
     <div class="gallery-content">
         <div class="own-container content-grid">
 
-            <a href="">
-                <div class="image">
-                    <div class="overlay-text">18. ROĐENDANI</div>
-                    <img src="<?php echo e(asset('assets/images/18-birthday.jpg')); ?>" alt=""/></div>
-            </a>
-            <a href="">
-                <div class="image">
-                    <div class="overlay-text">1. ROĐENDANI</div>
-                    <img src="<?php echo e(asset('assets/images/1-birthday.jpg')); ?>" alt=""/></div>
-            </a>
-            <a href="">
-                <div class="image">
-                    <div class="overlay-text">KRŠTENJA</div>
-                    <img src="<?php echo e(asset('assets/images/gallery-category-3.jpg')); ?>" alt=""/></div>
-            </a>
-            <a href="">
-                <div class="image">
-                    <div class="overlay-text">SVADBE</div>
-                    <img src="<?php echo e(asset('assets/images/gallery-category-4.jpg')); ?>" alt=""/></div>
-            </a>
-            <a href="">
-                <div class="image">
-                    <div class="overlay-text">REKLAMNI MATERIJALI</div>
-                    <img src="<?php echo e(asset('assets/images/gallery-category-4.jpg')); ?>" alt=""/></div>
-            </a>
+            <?php $__currentLoopData = $categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $cat): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                <a href="">
+                    <div class="image">
+                        <div class="overlay-text"><?php echo e($cat->name); ?></div>
+                        <img src="<?php echo e(asset('assets/images/categories/'. $cat-> primary_image)); ?>" alt="<?php echo e($cat->name); ?>"/></div>
+                </a>
+            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+            
+            
             
             
             
