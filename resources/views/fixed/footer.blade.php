@@ -10,7 +10,7 @@
             <h6>KORISNI LINKOVI</h6>
             <ul>
                 <li><a href="/">POCETNA</a></li>
-                <li><a href="/categories">KATEGORIJE GALERIJE</a></li>
+                <li><a href="/categories">KATEGORIJE</a></li>
                 <li><a href="">O MENI</a></li>
                 <li><a href="">KONTAKT</a></li>
             </ul>

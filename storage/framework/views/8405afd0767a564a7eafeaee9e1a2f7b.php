@@ -13,7 +13,7 @@
             <?php $__currentLoopData = $categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $cat): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <a href="">
                     <div class="image">
-                        <div class="overlay-text"><?php echo e($cat->name); ?></div>
+                        <div class="overlay-text"><?php echo e(strtoupper($cat->name)); ?></div>
                         <img src="<?php echo e(asset('assets/images/categories/'. $cat-> primary_image)); ?>" alt="<?php echo e($cat->name); ?>"/></div>
                 </a>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
