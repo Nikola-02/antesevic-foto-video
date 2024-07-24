@@ -7,11 +7,11 @@ use Intervention\Image\ImageManager;
 
 class BaseController extends Controller
 {
-    protected function saveCompressedAndResizedImageAndGetImageName($file){
+    protected function saveCompressedAndResizedImageAndGetImageName($file, $destination){
         $image = $file;
         $timestamp = now()->timestamp;
         $new_image_name = $timestamp . '_' . $image->getClientOriginalName();
-        $destinationPath = public_path('/assets/images/categories');
+        $destinationPath = public_path('/assets/images/' . $destination);
 
         $img = imagecreatefromstring(file_get_contents($image->getRealPath()));
 

@@ -36,7 +36,7 @@ class CategoriesAdminController extends BaseController
         try {
 
             if($request->file('primary_image')){
-                $form_fields['primary_image'] = $this->saveCompressedAndResizedImageAndGetImageName($request->file('primary_image'));
+                $form_fields['primary_image'] = $this->saveCompressedAndResizedImageAndGetImageName($request->file('primary_image'), 'categories');
 
                 Category::create($form_fields);
             }else{
@@ -81,7 +81,7 @@ class CategoriesAdminController extends BaseController
         try {
 
             if($request->file('primary_image')){
-                $form_fields['primary_image'] = $this->saveCompressedAndResizedImageAndGetImageName($request->file('primary_image'));
+                $form_fields['primary_image'] = $this->saveCompressedAndResizedImageAndGetImageName($request->file('primary_image'), 'categories');
 
                 $category->update($form_fields);
             }else{

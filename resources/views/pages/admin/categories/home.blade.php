@@ -22,7 +22,7 @@
                                     <h6 class="fw-semibold mb-0">Name</h6>
                                 </th>
                                 <th class="border-bottom-0">
-                                    <h6 class="fw-semibold mb-0">Image</h6>
+                                    <h6 class="fw-semibold mb-0">Thumbnail Image</h6>
                                 </th>
                                 <th class="border-bottom-0">
                                     <h6 class="fw-semibold mb-0">Created At</h6>

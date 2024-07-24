@@ -6,14 +6,14 @@ use App\Models\Category;
 use App\Models\Gallery;
 use Illuminate\Http\Request;
 
-class GalleriesAdminController extends Controller
+class GalleriesAdminController extends BaseController
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('pages.admin.galleries.home', ['galleries'=> Gallery::all()]);
+        return view('pages.admin.galleries.home', ['galleries'=> Gallery::with('category')->get()]);
     }
 
     /**
@@ -21,7 +21,7 @@ class GalleriesAdminController extends Controller
      */
     public function create()
     {
-        return view('pages.admin.galleries.create');
+        return view('pages.admin.galleries.create', ['categories'=> Category::all()]);
     }
 
     /**
@@ -29,7 +29,26 @@ class GalleriesAdminController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $form_fields = $request->validate([
+            'name'=>'required',
+            'primary_image'=>'required|mimes:jpg,jpeg,png',
+            'category_id'=>'required'
+        ]);
+
+        try {
+
+            if($request->file('primary_image')){
+                $form_fields['primary_image'] = $this->saveCompressedAndResizedImageAndGetImageName($request->file('primary_image'), 'galleries');
+
+                Gallery::create($form_fields);
+            }else{
+                return redirect()->back()->with('error', 'Slika je obavezna da se posalje.');
+            }
+
+            return redirect('/admin/galleries');
+        }catch (\Exception $ex){
+            return redirect()->back()->with('error', 'Desila se greska u bazi.');
+        }
     }
 
     /**
