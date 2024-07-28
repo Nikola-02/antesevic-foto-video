@@ -54,9 +54,9 @@ class GalleriesAdminController extends BaseController
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Gallery $gallery)
     {
-        //
+        return view('pages.admin.galleries.show', ['gallery'=> $gallery]);
     }
 
     /**

@@ -8,3 +8,31 @@ img.profile-img {
     object-fit: cover;
     object-position: 0 10%;
 }
+
+.gallery-posts{
+    .add-post-img-div{
+        position: relative;
+        a{
+            i{
+                position: absolute;
+                z-index: 9999;
+                color: white;
+                font-size: 50px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            img{
+                filter: blur(4px) brightness(85%);
+                transition: 0.3s all ease;
+                &:hover{
+                    transform: scale(1.05);
+                }
+            }
+
+
+        }
+
+    }
+}
