@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Gallery;
 use Illuminate\Http\Request;
 
-class PostController extends Controller
+class PostsAdminController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -20,6 +21,10 @@ class PostController extends Controller
     public function create()
     {
         //
+    }
+
+    public function createForGallery(Gallery $gallery){
+        return view('pages.admin.posts.create', ['gallery'=> $gallery]);
     }
 
     /**

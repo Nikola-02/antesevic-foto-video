@@ -21,14 +21,18 @@ img.profile-img {
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%);
+                transition: 0.3s all ease;
+                &:hover{
+                    font-size: 60px;
+                }
             }
 
             img{
                 filter: blur(4px) brightness(85%);
                 transition: 0.3s all ease;
-                &:hover{
-                    transform: scale(1.03);
-                }
+                /*&:hover{*/
+                /*    transform: scale(1.03);*/
+                /*}*/
             }
 
 

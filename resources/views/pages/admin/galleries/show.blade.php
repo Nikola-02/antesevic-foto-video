@@ -14,12 +14,12 @@
                         <div class="add-post-img-div max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <a href="#">
                                 <i class="ti ti-plus"></i>
-                                <img class="rounded-t-lg" src="{{asset('assets/images/galleries/' . '1721772383_mic-6127818_1280.jpg')}}" alt="" />
+                                <img class="rounded-t-lg" src="{{asset('assets/images/' . 'first-post.jpg')}}" alt="" />
                             </a>
                         </div>
 
                         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                            <a href="#">
+                            <a href="/admin/posts/createForGallery/{{ $gallery->id }}">
                                 <img class="rounded-t-lg" src="{{asset('assets/images/galleries/' . '1721772383_mic-6127818_1280.jpg')}}" alt="" />
                             </a>
                         </div>
