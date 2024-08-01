@@ -27,7 +27,7 @@ img.profile-img {
                 filter: blur(4px) brightness(85%);
                 transition: 0.3s all ease;
                 &:hover{
-                    transform: scale(1.05);
+                    transform: scale(1.03);
                 }
             }
 
