@@ -12,6 +12,7 @@ img.profile-img {
 .gallery-posts{
     .add-post-img-div{
         position: relative;
+        height: fit-content;
         a{
             i{
                 position: absolute;
