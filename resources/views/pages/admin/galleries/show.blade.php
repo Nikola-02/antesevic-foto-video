@@ -39,6 +39,16 @@
                             <a href="#">
                                 <img class="rounded-t-lg" src="{{asset('assets/images/galleries/' . '1721772383_mic-6127818_1280.jpg')}}" alt="" />
                             </a>
+                            <span class="border-bottom-0">
+                                <a href="/admin/categories/2/edit" class="btn btn-primary mb-0"><i class="ti ti-pencil"></i></a>
+                            </span>
+                            <span class="border-bottom-0">
+                                <form action="/admin/categories/2" method="post">
+                                    @csrf
+                                    @method('delete')
+                                    <button type="submit" class="btn btn-danger mb-0"><i class="ti ti-trash"></i></button>
+                                </form>
+                            </span>
                         </div>
 
                     </div>

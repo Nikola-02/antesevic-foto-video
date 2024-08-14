@@ -23,10 +23,6 @@ class PostsAdminController extends Controller
         //
     }
 
-    public function createForGallery(Gallery $gallery){
-        return view('pages.admin.posts.create', ['gallery'=> $gallery]);
-    }
-
     /**
      * Store a newly created resource in storage.
      */
