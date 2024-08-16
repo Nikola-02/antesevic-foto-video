@@ -19,6 +19,8 @@
     {{-- Flowbite --}}
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
 
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+
     {{-- CSS--}}
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}"/>
 
