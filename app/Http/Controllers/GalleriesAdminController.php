@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Gallery;
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class GalleriesAdminController extends BaseController
@@ -56,7 +57,9 @@ class GalleriesAdminController extends BaseController
      */
     public function show(Gallery $gallery)
     {
-        return view('pages.admin.galleries.show', ['gallery'=> $gallery]);
+        $posts = Post::where('gallery_id', $gallery->id)->get();
+
+        return view('pages.admin.galleries.show', ['gallery'=> $gallery, 'posts'=>count($posts) > 0 ? $posts : []]);
     }
 
     /**
