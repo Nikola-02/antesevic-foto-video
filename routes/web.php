@@ -17,7 +17,6 @@ Route::prefix('admin')->group(function(){
     Route::resource('categories', CategoriesAdminController::class);
     Route::resource('galleries', GalleriesAdminController::class);
     Route::resource('posts', PostsAdminController::class);
-    Route::get('/posts/createForGallery/{gallery}', [PostsAdminController::class, 'createForGallery']);
 });
 
 Route::get('/qwkeuyfgkqweuygfkyuwergkuwehrflogin', [UserController::class, 'login']);
