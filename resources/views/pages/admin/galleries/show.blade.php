@@ -3,8 +3,13 @@
 
     <div class="categories-admin">
         <div class="title-and-button d-flex align-content-center gap-3 mt-3 mb-2">
-            <h3 class="text-2xl fw-bolder">{{ $gallery->name }} (galerija) - slike</h3>
-            <a href="/admin/galleries/create" class="btn btn-primary">Dodaj galeriju</a>
+            <h3 class="text-2xl fw-bolder">Postovi</h3>
+
+{{--            <a href="/admin/galleries/create" class="btn btn-primary">Dodaj galeriju</a>--}}
+        </div>
+        <div class="gallery-category-titles d-flex gap-5 align-items-center mt-4">
+            <h4 class="text-xl ">Galerija: <span class="text-primary">{{ $gallery->name }}</span></h4>
+            <h5 class="text-lg  ">Kategorija: <span class="text-primary">{{$gallery->category->name}}</span></h5>
         </div>
 
         <div class="col-lg-12 d-flex align-items-stretch pt-4">
@@ -65,12 +70,10 @@
 {{--                        </div>--}}
 
                         @foreach($posts as $post)
-                            <div class="shadow-xl max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                                <a href="#">
-                                    <img class="rounded-t-lg" src="{{asset('assets/images/posts/' . $post->path)}}" alt="{{$post->path}}" />
-                                </a>
+                            <div class="single-post shadow-xl max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
+                                <img class="my-3" src="{{asset('assets/images/posts/' . $post->path)}}" alt="{{$post->path}}" />
 
-                                <div class="flex items-center p-3 justify-between">
+                                <div class="flex items-center p-3 justify-between border-t border-black-400">
                                     <div class="title-post flex flex-wrap">
                                         <p class="mr-2 font-semibold">Created at:</p>
                                         <p>{{$post->created_at}}</p>

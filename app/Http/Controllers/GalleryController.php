@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Gallery;
 use Illuminate\Http\Request;
 
 class GalleryController extends BaseController
 {
-    public function index()
+    public function index($cat_id)
     {
-        return view('pages.gallery');
+        $galleries = Gallery::where('category_id', $cat_id)->get();
+        return view('pages.galleries', ["galleries"=>$galleries]);
     }
 }

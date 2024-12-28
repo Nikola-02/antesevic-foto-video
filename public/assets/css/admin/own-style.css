@@ -39,4 +39,15 @@ img.profile-img {
         }
 
     }
+
+    .single-post{
+
+        img{
+            display: block;
+            height: 220px;
+            margin: 0 auto;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
 }

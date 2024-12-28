@@ -34,6 +34,20 @@
   color: #1B1B1B;
 }
 
+#own-button-nav {
+  color: #F9F9F9;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: 0.8px;
+  border: 1px solid #1B1B1B;
+  transition: 0.3s all ease-in-out;
+}
+
+#own-button-nav:hover {
+  background-color: #F9F9F9;
+  color: #1B1B1B;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -259,7 +273,7 @@ footer .own-container {
   padding: 110px 0;
 }
 footer .own-container h6 {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 500;
   margin-bottom: 30px;
   padding-bottom: 10px;
@@ -274,7 +288,7 @@ footer .own-container ul li:not(:last-child) {
 footer .own-container ul li a {
   color: #F9F9F9;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 300;
 }
 footer .own-container ul li a span {
@@ -291,7 +305,7 @@ footer .own-container .left h4 {
   border-bottom: 1px solid rgba(249, 249, 249, 0.3);
 }
 footer .own-container .left p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
 }
 footer .own-container .center {
@@ -317,22 +331,22 @@ footer .after-footer .own-container {
   padding: 0;
 }
 footer .after-footer .own-container p {
-  font-size: 21px;
+  font-size: 18px;
 }
 
 .gallery-title {
   margin-top: 55px;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
   text-align: center;
 }
 .gallery-title .title h3 {
-  font-weight: 500;
-  font-size: 45px;
+  font-weight: 600;
+  font-size: 39px;
 }
 .gallery-title .title p {
   margin-top: 12px;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 17px;
   color: rgba(0, 0, 0, 0.7);
 }
 

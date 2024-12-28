@@ -21,7 +21,7 @@
     <div class="own-container">
         <div class="about-me-home">
             <div class="image">
-                <img src="{{asset('assets/images/filip.png')}}" alt="Filip's image">
+                <img src="{{asset('assets/images/filip-nova.jpeg')}}" alt="Filip's image">
             </div>
             <div class="text">
                 <div class="title">

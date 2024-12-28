@@ -8,9 +8,14 @@ use \App\Http\Controllers\GalleriesAdminController;
 use \App\Http\Controllers\PostsAdminController;
 use App\Http\Controllers\CategoriesController;
 use \App\Http\Controllers\UserController;
+use \App\Http\Controllers\ContactController;
+use \App\Http\Controllers\GalleryController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/categories', [CategoriesController::class, 'index']);
+Route::get('/contact', [ContactController::class, 'index']);
+Route::post('/contact', [ContactController::class, 'sendToEmail'])->name('contact.sendToEmail');
+Route::get('/galleries/{cat_id}', [GalleryController::class, 'index'])->name('galleries');
 
 Route::prefix('admin')->group(function(){
     Route::get('/', [AdminController::class, 'index']);

@@ -59,7 +59,7 @@ class GalleriesAdminController extends BaseController
     {
         $posts = Post::where('gallery_id', $gallery->id)->get();
 
-        return view('pages.admin.galleries.show', ['gallery'=> $gallery, 'posts'=>count($posts) > 0 ? $posts : []]);
+        return view('pages.admin.galleries.show', ['gallery'=> $gallery->load('category'), 'posts'=>count($posts) > 0 ? $posts : []]);
     }
 
     /**

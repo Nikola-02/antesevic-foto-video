@@ -2,7 +2,7 @@
 @section('content')
     <div class="own-container gallery-title">
         <div class="title">
-            <h3>KATEGORIJE GALERIJE</h3>
+            <h3>KATEGORIJE</h3>
             <p>Ovde možete videti i izabrati neku od kategorija mojih projekata.</p>
             <p>Takodje, ovde možete videti za koje me sve prilike možete angažovati.</p>
         </div>
@@ -11,7 +11,7 @@
         <div class="own-container content-grid">
 
             @foreach ($categories as $cat)
-                <a href="">
+                <a href="{{ route('galleries', ['cat_id' => $cat->id]) }}">
                     <div class="image">
                         <div class="overlay-text">{{ strtoupper($cat->name) }}</div>
                         <img src="{{asset('assets/images/categories/'. $cat-> primary_image)}}" alt="{{ $cat->name }}"/></div>
