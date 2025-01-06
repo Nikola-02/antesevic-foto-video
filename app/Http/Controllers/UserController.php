@@ -8,6 +8,10 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+    public function aboutMe(){
+        return view('pages.about_me');
+    }
+
     public function login(){
 //        Role::create([
 //            'name'=>'admin'

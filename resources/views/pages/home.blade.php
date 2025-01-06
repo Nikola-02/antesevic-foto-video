@@ -28,9 +28,9 @@
                     <p>O MENI</p>
                     <h3>Sa kim ćete raditi?</h3>
                 </div>
-                <p class="about-me-desc">Ja sam Filip batonga, sprdam se i snimam i fotografisem sve vrste gengova i
-                    sprdnji koji su Vam potrebne. Imam 20 godina i kidara sam i volim da koristim fotoaparat. Dobar sam
-                    ovako i vozim Audi da bi pričalo selo samo.</p>
+                <p class="about-me-desc">Ja sam Filip, fotograf i videograf sa preko 6+ godina iskustva u ovom prelepom poslu.
+                    Kroz svoj rad, trudim se da uhvatim posebne trenutke i stvorim trajne uspomene koje će vam doneti radost, sreću, emocije...
+                </p>
                 <a href="/about-me" class="own-button">PROČITAJ VIŠE</a>
             </div>
         </div>
@@ -42,7 +42,7 @@
                 <h3>Rezervišite datum na vreme</h3>
             </div>
             <p class="contact-desc">Kontaktiraj me što pre kako bi se dogovorili oko datuma</p>
-            <a href="" class="own-button">REZERVIŠI DATUM</a>
+            <a href="/contact" class="own-button">REZERVIŠI DATUM</a>
         </div>
     </div>
     <div class="own-container">
@@ -51,7 +51,7 @@
                 <p>GALERIJA</p>
                 <h3>Moji najbolji projekti</h3>
                 <span>Ovde možete pronaći neke od moji najboljih radova</span>
-                <a href="" class="own-button">VIDI SVE RADOVE</a>
+                <a href="/categories" class="own-button">VIDI SVE RADOVE</a>
             </div>
             <div class="grid-gallery">
                 <div class="small-grid">

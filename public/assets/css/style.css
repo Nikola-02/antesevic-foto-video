@@ -34,20 +34,6 @@
   color: #1B1B1B;
 }
 
-#own-button-nav {
-  color: #F9F9F9;
-  font-weight: 800;
-  text-decoration: none;
-  letter-spacing: 0.8px;
-  border: 1px solid #1B1B1B;
-  transition: 0.3s all ease-in-out;
-}
-
-#own-button-nav:hover {
-  background-color: #F9F9F9;
-  color: #1B1B1B;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -106,6 +92,21 @@ body {
 }
 .nav-container nav ul li a:hover {
   color: #434343;
+}
+
+#own-button-nav {
+  padding: 12px 26px;
+  color: #F9F9F9;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: 0.8px;
+  border: 1px solid #1B1B1B;
+  transition: 0.3s all ease-in-out;
+}
+#own-button-nav:hover {
+  background-color: transparent;
+  border-color: #1B1B1B;
+  color: #1B1B1B;
 }
 
 .own-container .hero {
@@ -191,7 +192,7 @@ body {
 }
 .contact-reservation {
   margin-top: 70px;
-  background: url("../images/contact-section.png");
+  background: url("../images/contact-section.jpg");
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
@@ -288,7 +289,7 @@ footer .own-container ul li:not(:last-child) {
 footer .own-container ul li a {
   color: #F9F9F9;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 300;
 }
 footer .own-container ul li a span {
@@ -298,7 +299,7 @@ footer .own-container .left {
   width: 27%;
 }
 footer .own-container .left h4 {
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 300;
   margin-bottom: 35px;
   padding-bottom: 10px;
@@ -312,6 +313,9 @@ footer .own-container .center {
   width: 15%;
   color: #F9F9F9;
 }
+footer .own-container .center a {
+  font-size: 18px;
+}
 footer .own-container .right {
   width: 27%;
   color: #F9F9F9;
@@ -319,6 +323,9 @@ footer .own-container .right {
 footer .own-container .right ul li {
   display: flex;
   align-items: center;
+}
+footer .own-container .right ul li a {
+  font-size: 18px;
 }
 footer .after-footer {
   display: flex;
@@ -336,25 +343,24 @@ footer .after-footer .own-container p {
 
 .gallery-title {
   margin-top: 55px;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
   text-align: center;
 }
 .gallery-title .title h3 {
-  font-weight: 600;
-  font-size: 39px;
+  font-weight: 500;
+  font-size: 45px;
 }
 .gallery-title .title p {
   margin-top: 12px;
   font-weight: 300;
-  font-size: 17px;
+  font-size: 20px;
   color: rgba(0, 0, 0, 0.7);
 }
 
 .gallery-content .content-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
   row-gap: 30px;
 }
 .gallery-content .content-grid a .image {
@@ -398,4 +404,6 @@ footer .after-footer .own-container p {
 .own-container .login-form form input {
   padding: 9px 12px;
   font-size: 16px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

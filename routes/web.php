@@ -10,12 +10,15 @@ use App\Http\Controllers\CategoriesController;
 use \App\Http\Controllers\UserController;
 use \App\Http\Controllers\ContactController;
 use \App\Http\Controllers\GalleryController;
+use \App\Http\Controllers\PostsController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/categories', [CategoriesController::class, 'index']);
+Route::get('/about-me', [UserController::class, 'aboutMe']);
 Route::get('/contact', [ContactController::class, 'index']);
 Route::post('/contact', [ContactController::class, 'sendToEmail'])->name('contact.sendToEmail');
 Route::get('/galleries/{cat_id}', [GalleryController::class, 'index'])->name('galleries');
+Route::get('/posts/{gallery}', [PostsController::class, 'index'])->name('posts');
 
 Route::prefix('admin')->group(function(){
     Route::get('/', [AdminController::class, 'index']);

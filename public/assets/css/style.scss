@@ -76,6 +76,21 @@ body {
   }
 }
 
+#own-button-nav{
+    padding: 12px 26px;
+    color: #F9F9F9;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 0.8px;
+    border: 1px solid #1B1B1B;
+    transition: 0.3s all ease-in-out;
+    &:hover {
+      background-color: transparent;
+      border-color: #1B1B1B;
+      color: #1B1B1B;
+    }
+}
+
 //Hero
 .own-container {
   .hero {
@@ -185,7 +200,7 @@ body {
 //Contact section
 .contact-reservation {
   margin-top: 70px;
-  background: url("../images/contact-section.png");
+  background: url("../images/contact-section.jpg");
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
@@ -288,7 +303,7 @@ footer {
     padding: 110px 0;
 
     h6 {
-      font-size: 25px;
+      font-size: 22px;
       font-weight: 500;
       margin-bottom: 30px;
       padding-bottom: 10px;
@@ -320,7 +335,7 @@ footer {
       width: 27%;
 
       h4 {
-        font-size: 34px;
+        font-size: 30px;
         font-weight: 300;
         margin-bottom: 35px;
         padding-bottom: 10px;
@@ -328,7 +343,7 @@ footer {
       }
 
       p {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 300;
       }
     }
@@ -336,6 +351,9 @@ footer {
     .center {
       width: 15%;
       color: vars.$white-smoke;
+      a{
+        font-size: 18px;
+      }
     }
 
     .right {
@@ -346,6 +364,9 @@ footer {
         li {
           display: flex;
           align-items: center;
+          a{
+            font-size: 18px;
+          }
         }
       }
     }
@@ -362,7 +383,7 @@ footer {
       padding: 0;
 
       p {
-        font-size: 21px;
+        font-size: 18px;
       }
     }
   }

@@ -42,7 +42,7 @@
                 <h3>Rezervišite datum na vreme</h3>
             </div>
             <p class="contact-desc">Kontaktiraj me što pre kako bi se dogovorili oko datuma</p>
-            <a href="" class="own-button">REZERVIŠI DATUM</a>
+            <a href="/contact" class="own-button">REZERVIŠI DATUM</a>
         </div>
     </div>
     <div class="own-container">
