@@ -1,5 +1,12 @@
 
 <?php $__env->startSection('content'); ?>
+    <div class="carousel-container">
+        <div class="carousel">
+            <img src="<?php echo e(asset('assets/images/carousel-first.jpg')); ?>" alt="Girl and boy" class="carousel-item">
+            <img src="<?php echo e(asset('assets/images/carousel-second.jpg')); ?>" alt="Girl in nature" class="carousel-item">
+            <img src="<?php echo e(asset('assets/images/carousel-third.jpg')); ?>" alt="Brides" class="carousel-item">
+        </div>
+    </div>
     <div class="own-container">
         <div class="hero">
             <div class="text">

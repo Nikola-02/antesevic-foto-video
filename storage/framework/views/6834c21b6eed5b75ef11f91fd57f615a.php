@@ -8,6 +8,8 @@
 <?php echo $__env->yieldContent('script'); ?>
 
 <script src="https://kit.fontawesome.com/231b95a13a.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+<script src="<?php echo e(asset('assets/js/main/main.js')); ?>"></script>
 </body>
 </html>
 <?php /**PATH D:\Laravel\antesevic-foto-video\resources\views/layouts/layout.blade.php ENDPATH**/ ?>

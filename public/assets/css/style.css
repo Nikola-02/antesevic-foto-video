@@ -406,4 +406,52 @@ footer .after-footer .own-container p {
   font-size: 16px;
 }
 
+#navbar-default {
+  transition: 0.5s all ease-in-out;
+}
+
+.carousel-container {
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  transition: transform 0.3s ease-in-out;
+  opacity: 0.8;
+}
+
+.carousel-item.active {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+@media (max-width: 1282px) {
+  .carousel-container {
+    display: block;
+  }
+  .navbar-background-shadow {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .own-container .hero .image {
+    display: none;
+  }
+  #navbar-default {
+    font-size: 17px;
+  }
+}
+@media (max-width: 501px) {
+  .logo-text {
+    font-size: 17px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

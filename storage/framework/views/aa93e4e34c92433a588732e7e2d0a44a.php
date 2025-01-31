@@ -21,6 +21,7 @@
 
     
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
 
     <title>Filip Antesevic - FOTO & VIDEO</title>
 </head>
